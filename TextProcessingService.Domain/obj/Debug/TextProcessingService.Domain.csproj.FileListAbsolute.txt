@@ -1,0 +1,5 @@
+D:\Projects\TextProcessingService\TextProcessingService.Domain\bin\Debug\TextProcessingService.Domain.dll
+D:\Projects\TextProcessingService\TextProcessingService.Domain\bin\Debug\TextProcessingService.Domain.pdb
+D:\Projects\TextProcessingService\TextProcessingService.Domain\obj\Debug\TextProcessingService.Domain.csprojResolveAssemblyReference.cache
+D:\Projects\TextProcessingService\TextProcessingService.Domain\obj\Debug\TextProcessingService.Domain.dll
+D:\Projects\TextProcessingService\TextProcessingService.Domain\obj\Debug\TextProcessingService.Domain.pdb

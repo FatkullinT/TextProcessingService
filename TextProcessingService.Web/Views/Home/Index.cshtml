@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Persons";
+}
+
+@model TextProcessingService.Web.Models.ProcessedTextModel
+
+@using (Html.BeginForm("Process", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="container">
+        <div class="row" style="height: 30px">
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <label class="btn btn-default" for="file-selector">
+                    <input id="file-selector" type="file" name="textFile" style="display:none"
+                           onchange="$('#upload-file-info').html(this.files[0].name)">
+                    Выбрать файл
+                </label>
+                <span class='label label-info' id="upload-file-info"></span>
+            </div>
+        </div>
+        <div class="row" style="height: 10px">
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="submit" class="btn btn-default" value="Обработать" />
+            </div>
+        </div>
+        @if (Model != null && !string.IsNullOrEmpty(Model.Text))
+        {
+            <div class="row" style="height: 10px">
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <pre>
+                        @Html.Raw(Model.Text)
+                    </pre>
+                </div>
+                <div class="col-md-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Имя</th>
+                                <th>Должность</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var person in Model.Persons)
+                        {
+                            <tr>
+                                <td>@person.FullName</td>
+                                <td>
+                                    @foreach (var property in person.Properties)
+                                    {
+                                        @property.Name
+                                        <br>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+    </div>
+}
+

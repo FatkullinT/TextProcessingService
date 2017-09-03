@@ -1,0 +1,5 @@
+D:\Projects\TextProcessingService\EP.Sdk\bin\release\EP.Sdk.dll
+D:\Projects\TextProcessingService\EP.Sdk\bin\release\EP.Sdk.pdb
+D:\Projects\TextProcessingService\EP.Sdk\obj\Release\EP.Sdk.csprojResolveAssemblyReference.cache
+D:\Projects\TextProcessingService\EP.Sdk\obj\Release\EP.Sdk.dll
+D:\Projects\TextProcessingService\EP.Sdk\obj\Release\EP.Sdk.pdb
